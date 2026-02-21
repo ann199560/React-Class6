@@ -1,10 +1,12 @@
 import { createHashRouter } from "react-router";
 import FrontendLayout from "./layout/FrontendLayout";
-import Home from "./views/Front/Home";
-import Products from "./views/Front/Products";
-import SingleProduct from "./views/Front/SingleProduct";
-import Cart from "./views/Front/Cart";
-import NotFound from "./views/Front/NotFound";
+import Home from "./views/front/Home";
+import Products from "./views/front/Products";
+import SingleProduct from "./views/front/SingleProduct";
+import Cart from "./views/front/Cart";
+import NotFound from "./views/front/NotFound";
+import Checkout from "./views/Front/Checkout";
+import Login from "./views/Login";
 
 // 建立路由表（裡面放陣列物件）
 export const router = createHashRouter([
@@ -27,6 +29,14 @@ export const router = createHashRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "checkout",
+        element: <Checkout />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

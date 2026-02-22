@@ -115,8 +115,8 @@ function Login({ getProducts, setIsAuth }) {
             // onChange={(e) => handleInputChange(e)}
           />
           <label htmlFor="password">Password</label>
-          {errors.username && (
-            <p className="text-danger">{errors.username.message}</p>
+          {errors.password && (
+            <p className="text-danger">{errors.password.message}</p>
           )}
         </div>
         <button
